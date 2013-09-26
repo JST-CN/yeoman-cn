@@ -14,7 +14,7 @@
 
 * progress.md 文件记录当前进度，内容格式为
 ```
-filename - In Progress | Done
+filename - [In Progress | Done]
 ```
 只有开始翻译和已经进行完翻译的文件会在此文件中列出。
 
