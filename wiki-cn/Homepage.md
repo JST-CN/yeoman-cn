@@ -8,11 +8,11 @@
 
 Yeoman 1.0版本不仅仅是一个工具，它还是一个工作流；一个让web开发和谐甚至变得更好的工具和最佳实践的集合。
 
-我们的工作流致力于提高你在构建web应用时的**生成力**和**舒适度**，由三种核心工具构成：*[yo](https://github.com/yeoman/yo) *(脚手架工具)，*[bower](http://bower.io)* （包管理工具），*[grunt](http://gruntjs.com)*（构建工具）。
+我们的工作流致力于提高你在构建web应用时的**生产力**和**舒适度**，由三种核心工具构成：*yo*（脚手架工具），*bower*（包管理工具），*grunt*（构建工具）。
 
-* [Yo](https://github.com/yeoman/yo) 搭建新应用的脚手架，编写你的Grunt配置并且安装你有可能在构建中需要的相关的Grunt任务. 
+* [Yo](https://github.com/yeoman/yo) 搭建新应用的脚手架，编写你的Grunt配置并且安装你有可能在构建中需要的相关的Grunt任务。
 
-* [Grunt](http://gruntjs.com) 被用来构建，预览以及测试你的项目，感谢来自那些由Yeoman团队和grunt-contrib所管理的任务的帮助. 
+* [Grunt](http://gruntjs.com) 被用来构建，预览以及测试你的项目，感谢来自那些由Yeoman团队和grunt-contrib所管理的任务的帮助。
 
 * [Bower](http://bower.io) 被用来进行依赖管理，所以你不再需要手动的下载和管理你的脚本了。
 
