@@ -1,10 +1,12 @@
-# yeoman wiki 中文之家
+# yeoman 中文社区
 
 ## 目标
 
 所有英文的wiki文档均fork自yeoman的[yeoman的wiki][yeoman-wiki]，希望可以将yeoman的相关文档本地化，来推动yeoman在中国的发展。
 
 所有wiki文档希望可以通过网站形式进行发布，使得查询变得更方便。
+
+_因为部分wiki文档的内容已经作为网页内容在[yeomanjs.org](http://yeomanjs.org)可以看到，没有在网页上列出的内容将随后添加专门的wiki页面。_
 
 ## 说明
 
