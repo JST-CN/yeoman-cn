@@ -1,0 +1,23 @@
+{
+  "name": "yeoman-cn",
+  "version": "0.0.1",
+  "description": "Yeoman Wiki in Chinese",
+  "main": "index.js",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qivhou/yeoman-cn.git"
+  },
+  "author": "qivhou",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/qivhou/yeoman-cn/issues"
+  }
+}
