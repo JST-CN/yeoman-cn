@@ -12,7 +12,7 @@ _因为部分wiki文档的内容已经作为网页内容在[yeomanjs.org](http:/
 
 * [wiki-en] 文件夹中存放从[yeoman的wiki][yeoman-wiki]fork的md文档，并将不定期与官网进行同步。
 
-* [wiki-cn] 文件夹中存放所有翻译好的md文档。
+* [wiki-cn] 文件夹中存放所有翻译好的md文档，以及未翻译的英文文档。_为了保持文档结构的完整性_
 
 * progress.md 文件记录当前进度，内容格式为
 ```
@@ -26,6 +26,26 @@ filename - [In Progress | Done]
 
 * 原则上按照原wiki的文档结构由上自下进行翻译。
 
+* 请参与贡献的同步，先运行以下`grunt update`任务，进行与官方wiki的同步，对于已经完成翻译但是官方又有更新的wiki文档，比如下面的 Deployment.md 文件，欢迎大家根据提示信息及时更新中文翻译。
+> Warning: wiki-en/Deployment.md has been changed on official site, please update your translation.
+
+```shell
+>grunt update
+
+Running "clean:0" (clean) task
+
+Running "update_en" task
+
+Running "copy:en" (copy) task
+Copied 41 files
+
+Running "update_cn" task
+>> update file: test-example.md
+>> Warning: wiki-en/Deployment.md has been changed on official site, please update your translation.
+
+Running "clean:0" (clean) task
+
+```
 
 > 期待着你的加入！！！
 

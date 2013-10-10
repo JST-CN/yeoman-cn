@@ -38,6 +38,10 @@
  * 你可能会得到一个像这样的错误 `Updates were rejected because the tip of your current branch is behind`。你可以通过[强制推送到远程](http://stackoverflow.com/a/13403588/64949) 解决它（但是请小心一点，它将会销毁那儿已经存在的所有文件）。
 
 
+### 替代方式
+
+如果你倾向于不把dist提交到master分支，你可以使用[git-directory-deploy](https://github.com/X1011/git-directory-deploy)脚本从工作目录直接部署文件。
+
 ### 额外的资料
  [Git Subtree 文档](https://github.com/git/git/blob/master/contrib/subtree/git-subtree.txt)
 
