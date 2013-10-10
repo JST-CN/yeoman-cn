@@ -29,7 +29,7 @@ module.exports = function(grunt) {
     // define the tasks
     grunt.registerTask('update_cn', 'Check the git status to update wiki-cn folder', function(){
         var done = this.async(),
-            re_updates = /( M |\?\? )wiki-en\/((\w+\/)*\w+\.md)/,
+            re_updates = /( M |\?\? )wiki-en\/((.*\/)*.*\.md)/,
             re_progress = /\* (.*\.md) /,
             i, lines, wiki_cn_path, wiki_en_path, progress, found;
 
