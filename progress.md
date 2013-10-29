@@ -11,3 +11,4 @@
 * Support.md - [Done]
 * docs/Generators.md - [Done]
 * docs/Package-Manager.md - [Done]
+* FAQ.md - [Done]

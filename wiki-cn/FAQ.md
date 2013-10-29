@@ -1,62 +1,60 @@
-# Frequently Asked Questions
+# 常见问题
 
-### What are the goals of the project?
+### 这个项目的目的目标是什么?
 
-The short-term goals for Yeoman are to provide developers with an improved tooling workflow so that they can spend less time on process and more time focusing on building beautiful web applications. Initially, we hope to make it as easy as possible to work with existing frameworks and tools developers are used to using.
+对Yeoman项目来说，短期的目标是提供给开发者一个经过改进的工作流工具，来使他们可以花更少的时间在流程上，集中更多的精力和时间来构建漂亮的web应用。最初的时候，我们希望把它打造的尽可能简单来与那些开发者们已经习惯使用的框架和工具协作。
 
-Long-term, the project may also assist developers with creating applications using modern technologies such as Web Components.
+长期的目标是这个项目也可以协助开发者使用Web组件等最流行的技术来创建应用。
 
-### What is a command-line interface?
+### 命令行接口是什么样的？
 
-A command-line interface is a means for developers to interact with a system using text commands. On Linux or OSX, this is often done using the terminal and on Windows we use the command shell or a third-party tool such as [Cygwin](http://www.cygwin.com).
-
-
-### What is a package manager?
-
-A package manager runs through a command-line interface and is a tool for automating the process of installing, upgrading, configuring and managing dependencies for projects. An example of a package management registry is NPM.
+对开发者来说，一个命令行接口意味着使用文本命令和系统进行互动。在Linux或者OSX平台上，使用终端是司空见惯的，但是在Windows上我们使用command shell或者例如[Cygwin](http://www.cygwin.com)这样的三方的工具。
 
 
-### How does Yeoman differ from Grunt?
+### 包管理器是什么？
 
-Yeoman builds upon a number of open-source tools to offer an opinionated workflow that helps developers achieve common tasks more easily. [Grunt.js](http://gruntjs.com) is one of these tools and powers our underlying build process and task plugin architecture.
-
-On top of this architecture, we've highly customized tasks, profiles and systems which work well together and also provide developers with features like our generator system and Twitter Bower integration. Yeoman takes care of configuring your Gruntfile and setup to support Sass, CoffeeScript and Require.js/r.js out of the box. With additional features like wiring, an improved `server` and `init`, we like to think of ourselves as a helper project on top of Grunt.
-
-Developers are free to continue using any Grunt tasks with Yeoman and there should remain a good level of cross-tool task compatibility.
-
-### How does Yeoman differ from tools like Brunch or BBB?
-
-We love tools like Brunch and Grunt-BBB and feel that they offer a great solution for developers wishing to scaffold with frameworks like Backbone.js and Ember. With the Yeoman generator system, as we've ported over the Rails Generator system to work with Node, we feel we have an interesting opportunity to take application scaffolding in a new direction - one where it's easier for any developer to write scaffolds, support multiple testing frameworks, capture their own boilerplates and easily re-use them and so on.
-
-### How do I register or unregister a package on Bower?
-
-Packages can be registered on Bower using the `register` command. e.g `bower register myawesomepackagename git://github.com/youraccount/yourrepo`. We recommend reading the Bower [documentation](https://github.com/twitter/bower) before doing this to ensure that your repo includes the necessary files to supporting being `install`ed.
+包管理器通过命令行接口运行，是一个集安装，升级，配置和管理项目依赖的自动化过程工具。NPM就是一个包管理器的例子。
 
 
+### Yeoman与Grunt有什么区别？
 
-### Will the project be providing Generators for popular frameworks?
+Yeoman在一系列开源工具之上进行构建，提供自定义的工作流来帮助开发者更简单的完成常见的任务。[Grunt.js](http://gruntjs.com)是这些工具中的一种，并且使我们的构建过程和任务插件架构更强大。
 
-Our goal is to facilitate both developers and the community with the tools needed to create rich web applications easily. With that goal in mind, we'll be providing a great API (and docs) to our Generators system with examples of how to implement samples, but will rely on the community to create and maintain Generators for popular frameworks. This will allow us to focus on making Yeoman better without he distractions of maintaining a large number of Generators.
+在这个架构的顶端，我们有高度自定义的任务和概要文件以及可以很好与之配合工作的系统，同时也提供给开发者诸如生成器系统和整合Twitter的Bower包管理器的特性。Yeoman会关照你的Gruntfile的配置和安装来支持系统之外的Sass，CoffeeScript和Require.js/r.js。我们还提供了一些附加功能如wiring，改进的`serve`以及`init`，我们更愿意把自己看做是一个在Grunt之上的辅助项目。
 
+开发者在使用Yeoman的同时可以继续使用Grunt任务，跨工具任务的兼容性会保持在一个良好的水平。
 
-### What license is Yeoman released under?
+### Yeoman与Brunch或者BBB的工具有什么不同？
 
-Yeoman is released under a [BSD](http://opensource.org/licenses/bsd-license.php/) license.
+我们喜爱Brunch和Grunt-BBB这样的工具，并且认为它们给想要通过Backbone.js和Ember框架来搭建项目的开发者提供了一个很棒的解决方案。 因为我们已经把Rails生成器系统移植到了Node，有了Yeoman生成器系统，我们感到我们有一个有趣的机会来把应用搭建向一个新的方向发展 - 一个对所有开发者来说，可以更容易编写应用脚手架，支持多种测试框架，掌控他们自己的模板并且可以很容易的进行重用的方向。
 
-### What should I do before submitting an issue through GitHub?
+### 在Bower上我怎样可以注册或者注销一个包？
 
-Thanks for your interest in submitting an issue. In order for us to help you please check that you've completed the following steps:
+可以使用`register`命令把包可以注册到Bower上. 例如 `bower register myawesomepackagename git://github.com/youraccount/yourrepo`. 我们推荐你在做这个之前先阅读以下Bower的[文档](https://github.com/twitter/bower) ，确认你的代码库中包含了那些用来支持`install`的必要文件。
 
-* Made sure you're on the latest version
-* Read our documentation and [README](https://github.com/yeoman/yeoman/blob/master/readme.md) to ensure the issue hasn't been noted or solved already
-* Used the search feature to ensure that the bug hasn't been reported before
-* Included as much information about the bug as possible, including any output you've received, what OS and version you're on.
-* Shared the output from `echo $PATH $NODE_PATH` and `brew doctor` as this can also help track down the issue.
+### 这个项目将为一些流行的框架提供生成器吗？
 
-Issues can be submitted via the [issues tab](https://github.com/yeoman/yeoman/issues) on our GitHub repo.
+我们的目标是提供可以轻松创建丰富web应用的工具来方便开发者和社区。考虑到这一目标，我们将为我们的生成器系统提供一个很棒的API和文档，并且带有如何实现样本的例子，但是将依靠社区去创建和维护流行框架的生成器。这将使我们专注于将Yeoman打造的更好，而不是分心去维护大量的生成器。
 
 
-### What tools do Yeoman make use of?
+### Yeoman是在什么什么样的许可下发布的？
+
+Yeoman是在[BSD](http://opensource.org/licenses/bsd-license.php/)许可下发布的。
+
+### 在通过Github提交一个问题前我应该做什么？
+
+感谢你的关注并提交问题。为了使我们可以帮助到你，请确认你已经完成了以下步骤：
+
+* 确认你是在最新版本上
+* 阅读我们的文档和[README](https://github.com/yeoman/yeoman/blob/master/readme.md)确认这个问题还没有被标记或者解决。
+* 使用检索功能确保这个bug之前没有被报告过
+* 尽可能多的包含有关这个bug的信息，包括你接收到的所有输出，你的操作系统以及版本。
+* 共享从 `echo $PATH $NODE_PATH` 和 `brew doctor` 得到的输出，因为它们可以帮助追查这个问题。
+
+问题可以通过我们在Github代码库上的[issue tab](https://github.com/yeoman/yeoman/issues)进行提交。
+
+
+### Yeoman都利用了那些工具？
 
 * [Grunt](https://github.com/cowboy/grunt)
 * [Twitter Bower](http://bower.io)
@@ -82,13 +80,13 @@ Issues can be submitted via the [issues tab](https://github.com/yeoman/yeoman/is
 * [compass_bootstrap](https://github.com/vwall/compass-twitter-bootstrap/)
 
 
-### NPM appears to have installed yeoman but `yeoman` still gives me "command not found".
+### 显然NPM已经安装了yeoman但是`yeoman`依然给我返回"command not found".
 
-It's likely your PATH does not account for global NPM modules just yet. Better documentation forthcoming but until then, read [this comment](https://github.com/yeoman/yeoman/issues/466#issuecomment-8602733) and [this thread](https://github.com/yeoman/yeoman/issues/430#issuecomment-8597663).
+很可能你的PATH中并没有包括全局的NPM模块。更好的文档将会推出，但是在那之前请先阅读[这条评论](https://github.com/yeoman/yeoman/issues/466#issuecomment-8602733) 还有 [这条](https://github.com/yeoman/yeoman/issues/430#issuecomment-8597663).
 
-This usually happens when you install Node through Homebrew, since it puts Node modules in a directory that's not in your PATH.
+当你通过Homebrew安装Node的时候，这个是经常发生的，因为它吧Node模块放在了一个不再你PATH中的目录。
 
-From Homebrew:
+来自Homebrew的输出:
 
 ```
 ==> Caveats
@@ -98,55 +96,53 @@ variable to have npm-installed binaries picked up:
   /usr/local/share/npm/bin
 ```
 
-Quick fix for advanced users is to put the following in your .bashrc/.zshrc file:
+对于高级用户来说，快速的修复方法是把下面的内容放在你的 .bashrc/.zshrc 文件中：
 `export PATH=/usr/local/share/npm/bin:$PATH`
 
-For beginners `brew uninstall node` and download and install Node from their [website](http://nodejs.org).
+对于新手来说，`brew uninstall node` 然后从Nodejs的[网站](http://nodejs.org)下载并安装。
 
 
-### I'm getting `EMFILE, too many open files`
+### 我得到了 `EMFILE, too many open files`
 
-EMFILE mean you've reached the OS limit of concurrently open files. There aren't much we can do about it, however you can increase the limit yourself.
+EMFILE意思是你已经达到了操作系统同时打开文件的上限。我们没有太多可以做的，然而你可以自己扩大这个限制。
 
-Add `ulimit -n [number of files]` to your .bashrc/.zshrc file to increase the soft limit.
+添加 `ulimit -n [number of files]` 到你的 .bashrc/.zshrc 文件来增加这个软限制。
 
-If you reach the OS hard limit, you can follow this [StackOverflow answer](http://stackoverflow.com/a/34645/64949) to increase it.
+如果过你达到了操作系统的硬限制，你可以遵照这个[StackOverflow的回答](http://stackoverflow.com/a/34645/64949)来扩大它。
 
+### 我应该用什么来为我的应用写文档
 
+查看[#152 ticket for recommended solutions for documentation generation](https://github.com/yeoman/yeoman/issues/152#issuecomment-7081670)的细节。
 
-### What should I use for documenting my app
+### 为什么Yeoman要求一个CLA？
 
-View the details within [#152 ticket for recommended solutions for documentation generation](https://github.com/yeoman/yeoman/issues/152#issuecomment-7081670)
+它使IP保持清洁有助于防止围绕谁拥有什么软件展开的轻浮诉讼。基本上这是我们所有人无论如何要避免的一件事。综上所述，CLA声称当你贡献修复或者文档的时候，你拥有你将提交的代码以及相应的Google许可给其他人的代码。（在这种情况下，使它在BSD许可下是有效的）
 
-### Why does Yeoman require a CLA?
+所以，是的，这个一个额外的障碍，但是我们却无法在这儿避免它。这是一个Google开源的项目和相应的规则。
 
-It keeps the IP clean and helps to prevent frivolous lawsuits around who owns what software. Basically the thing all of us want to avoid anyhow. In summary, the CLA asserts that when you donate fixes or documentation, you both own the code that you're submitting and that Google can in turn license that code to other people. (In this case, making it available under the BSD license)
+对那些还有所担心的人，这儿有一些其他的项目也要求相似的协议，jQuery, Firefox, Sizzle, Dojo, Plone, Fedora, Cordova/Phonegap, Apache, Flex.
 
-So yeah it's an extra hurdle, but it's something we can't avoid here. This is a Google open source project and thems are the rules.
-
-Just FWIW, here are some other projects that require a similar agreement, jQuery, Firefox, Sizzle, Dojo, Plone, Fedora, Cordova/Phonegap, Apache, Flex.
-
-More:
+还有更多:
 * http://incubator.apache.org/ip-clearance/index.html
 * http://wiki.civiccommons.org/Contributor_Agreements
 
-### How do I use Compass sprites and the `image_url` helper with Yeoman?
+### 我怎样在Yeoman中使用Compass sprites和 `image_url` 助手？
 
-Follow the guide provided in [this gist](https://gist.github.com/passy/5270050).
+遵照[这个gist](https://gist.github.com/passy/5270050)中提供的向导.
 
 
-### How can I disable Insight or Update Notifier?
+### 我怎样能禁用Insight或者更新通知？
 
-You can use use a command line flag to disable them. Eg. `yo webapp --no-insight`
+你可以使用一条命令行标志来禁用它们。例如： `yo webapp --no-insight`
 
 Insight: `--no-insight`  
-Update Notifier: `--no-update-notifier`
+更新通知: `--no-update-notifier`
 
-You can also add `yeoman_test` as an environment variable with any value to permanently disable both.
+你也可以添加带有任意值的`yeoman_test`作为一个系统变量，来永久停用这两项功能。
 
-### Can I use livereloading with a custom webserver?
+### 我可以在一个自定义的Web服务器中使用livereloading吗？
 
-You bet! You can remove the `connect` task from your Gruntfile and manually insert this snippet into your HTML:
+必须的！你可以从你的Gruntfile中移除`connect`任务并且手动插入以下的代码片段到你的HTML中：
 
 ```html
 <!-- livereload script -->
@@ -156,12 +152,15 @@ You bet! You can remove the `connect` task from your Gruntfile and manually inse
 </script>
 ```
 
-After that, simply run `grunt server` like you normally would and enjoy automatic page refreshes.
+在完成后，像你平常一样简单的运行 `grunt serve`然后享受页面自动刷新。
 
-### What should I do after cloning a web application generated with Yeoman?
+### 在复制了通过Yeoman生成的web应用之后我应该做什么？
 
-Yeoman creates a `.gitignore` file for you. This file adds `node_modules` and `bower_components` folders to the blacklist. So, to run `grunt server` and download the Javascript dependencies listed in the `bower.json` file, you need to run 
+Yeoman为你创建了一个`.gitignore`文件。这个文件添加了 `node_modules` 还有 `bower_components` 文件夹到你的黑名单中。所以，运行 `grunt serve` 并且下载列在 `bower.json`文件中的Javascript依赖 ，你需要运行下面的命令：
+
 ```Bash
 npm install & bower install
 ```
-And check if these folders are created correctly.
+
+并且检查是否这些文件夹被正确的创建了。
+
