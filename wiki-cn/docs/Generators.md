@@ -340,7 +340,7 @@ What do you want to call your blog?
 * Blog的博文必须用Markdown书写
 * NPM将安装一些Grunt任务和其他一些帮助函数，这些帮助函数为我们将提供给用户的两个自定义任务服务：
   * `grunt build` - 创建一个来自每篇博文关键字的"wordmap"
-  * `grunt server` - 监控Markdown的更改，重新构建这个项目
+  * `grunt serve` - 监控Markdown的更改，重新构建这个项目
 * Bower将获取两个运行时依赖：
   * [Showdown](https://github.com/coreyti/showdown) - 把Markdown翻译为HTML
   * [Showup](https://github.com/stephenplusplus/showup) - 一个为这个生成器的目的而编写的库
@@ -495,14 +495,14 @@ Done, without errors.
 
 如果你好奇想看到更多，那就看吧！
 
-刚才那是构建任务,它也会从另一个grunt任务被运行；`server`。试试看这个：
+刚才那是构建任务,它也会从另一个grunt任务被运行；`serve`。试试看这个：
 
 ```bash
-$ grunt server
+$ grunt serve
 Running "build" task
 
 Running "connect:livereload" (connect) task
-Starting connect web server on localhost:9000.
+Starting connect web serve on localhost:9000.
 
 Running "open:server" (open) task
 
@@ -599,7 +599,7 @@ PostGenerator.prototype.files = function files() {
 
 _因为我们生成的文件内容非常少，它只有一个基于博文标题的`# 标题`，我选择移除`templates`目录，我把它写在了这个 `PostGenerator.prototype.files` 函数内实现。对于规模更大的应用，结构良好的分割是必不可少的。_
 
-我的天啊，我们有了一个blog生成器！试着创建编写一些博文。试着玩玩 `grunt server` 和 `grunt build`，保持 `index.html` 在打开状态然后看看结果。一切都按预期那样吗？
+我的天啊，我们有了一个blog生成器！试着创建编写一些博文。试着玩玩 `grunt serve` 和 `grunt build`，保持 `index.html` 在打开状态然后看看结果。一切都按预期那样吗？
 
 
 <h2 id="writing-your-next-generator">编写你的下一个生成器</h2>

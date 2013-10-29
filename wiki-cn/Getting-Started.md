@@ -156,7 +156,7 @@ grunt bower-install
 
 ```
 # Preview an app you have generated (with Livereload).
-grunt server
+grunt serve
 
 # Run the unit tests for an app.
 grunt test
@@ -169,7 +169,7 @@ grunt
 
 ```
 yo webapp
-grunt server
+grunt serve
 grunt test
 grunt
 ```
