@@ -1,6 +1,6 @@
 # 常见问题
 
-### 这个项目的目的目标是什么?
+### 这个项目的目标是什么?
 
 对Yeoman项目来说，短期的目标是提供给开发者一个经过改进的工作流工具，来使他们可以花更少的时间在流程上，集中更多的精力和时间来构建漂亮的web应用。最初的时候，我们希望把它打造的尽可能简单来与那些开发者们已经习惯使用的框架和工具协作。
 
@@ -8,7 +8,7 @@
 
 ### 命令行接口是什么样的？
 
-对开发者来说，一个命令行接口意味着使用文本命令和系统进行互动。在Linux或者OSX平台上，使用终端是司空见惯的，但是在Windows上我们使用command shell或者例如[Cygwin](http://www.cygwin.com)这样的三方的工具。
+对开发者来说，一个命令行接口意味着使用文本命令和系统进行互动。在Linux或者OSX平台上，使用终端是司空见惯的，但是在Windows上我们使用命令行工具或者像[Cygwin](http://www.cygwin.com)这样的三方的工具。
 
 
 ### 包管理器是什么？
@@ -158,7 +158,7 @@ Insight: `--no-insight`
 
 Yeoman为你创建了一个`.gitignore`文件。这个文件添加了 `node_modules` 还有 `bower_components` 文件夹到你的黑名单中。所以，运行 `grunt serve` 并且下载列在 `bower.json`文件中的Javascript依赖 ，你需要运行下面的命令：
 
-```Bash
+```
 npm install & bower install
 ```
 
