@@ -24,6 +24,7 @@ Yo由Yeoman项目维护并且利用脚手架模板我们称之为生成器来提
 ```
 npm install -g yo
 ```
+*npm是与[Node.js](http://nodejs.org)捆绑的包管理器。*
 
 如果你正在使用npm 1.2.10 或者更高版本，这个将会自动替你安装`grunt`和`bower`。如果你在使用一个比这个老一点的npm版本，你将需要手动安装它们：
 
@@ -46,9 +47,15 @@ npm install -g grunt-cli bower
 npm install -g generator-webapp
 ```
 
-这是默认的web应用生成器，它将搭建一个项目脚手架包括[HTML5 Boilerplate](http://html5boilerplate.com)，[jQuery](http://jquery.com)，[Modernizr](http://modernizr.com)，还有[Bootstrap](http://twbs.github.io/bootstrap)。在互动的提示中你将有选择去不要包含它们中的一些。
+这是默认的web应用生成器，它将搭建一个项目脚手架包括[HTML5 Boilerplate](http://html5boilerplate.com)，[jQuery](http://jquery.com)，[Modernizr](http://modernizr.com)，还有[Bootstrap](http://twbs.github.io/bootstrap)。在交互的提示中你可以选择不包含它们中的一些。
 
-现在生成器已经安装好了，为你的项目创建一个新的目录，然后运行：
+现在生成器已经安装好了，为你的项目创建一个新的目录，
+```
+mkdir my-yo-project
+cd my-yo-project
+```
+
+然后运行：
 
 ```
 yo webapp
