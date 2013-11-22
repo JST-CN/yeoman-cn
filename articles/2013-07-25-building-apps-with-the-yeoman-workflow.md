@@ -1,23 +1,21 @@
-# 用Yeoman工作流构建应用
-[原文链接](http://net.tutsplus.com/tutorials/javascript-ajax/building-apps-with-the-yeoman-workflow/)
-
+---
+layout: doc
+title: 用Yeoman工作流构建应用
+keywords: 构建应用 工作流 样例 
+description: 基本上来说，他戴一顶高帽子，住在你的电脑里，并且时刻等候你的召唤来告诉他你想要创建哪种应用。
+social: true
+comments: true
+category: docs
+---
 ## Yeoman是什么？
-
 好问题。它不是东西（:O)）,他是下面这位兄弟：
 <img src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/07/yo.png" alt="yo" >
-
 基本上来说，他戴一顶高帽子，住在你的电脑里，并且时刻等候你的召唤来告诉他你想要创建哪种应用。例如，搭建一个web应用将会看起来像下面这样：
-
 <img src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/07/yo-webapp.png" alt="yo webapp">
-
 在我脑海里出现的第一个念头是太NB了，怎么会有这种神器。第二个念头是：谢谢了，兄弟。
-
 所有我们要做的只是告诉他我们想要什么，而他用一些具体的问题进行回复，让有了我们更多的控制。
-
 然而，让我们折回去一步。因为并不是每个新电脑都会预安装Yeoman。他住在NPM包的代码库中。你只需要请求他一次，然后他就会打包好行李搬进你的硬盘。_确保你事先都打扫干净了，他喜欢干净清爽的环境_。
-
 他是一个有感受和主见的人，但是他很容易合作的。如果你认为他太自以为是了，他可以很容易被说服。
-
 让我们花点时间弄明白上面截图中的那个`yo webapp`命令究竟干了什么。
 
 _yo_
@@ -750,7 +748,9 @@ Yeoman只是整个栈中的一部分--[NPM](http://npmjs.org/)，[Node](http://n
 
 <img src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/07/me.jpg" alt="me">
 
-很期待见到你。
+期待着你的加入。
+
+[原文链接](http://net.tutsplus.com/tutorials/javascript-ajax/building-apps-with-the-yeoman-workflow/)
 
 >如果各位中国的开发者对Yeoman感兴趣的话，请参看下面的链接，这是由中国的开发者为了推动Yeoman在中国的发展，而进行的Yeoman相关文档本地化的项目而组织的网站和发起的项目。
 

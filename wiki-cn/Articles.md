@@ -1,8 +1,8 @@
-## Articles And Tutorials
+## 相关文章和教程
 
-The below is by no means an exhaustive list of Yeoman articles, just a few that we recommend.
+下面这些并不是所有关于Yeoman的文章，只是一部分我们推荐的。
 
-*Feel free to add additional ones, but make sure it's something of value and include the date.*
+*请尽量添加更多的文章和教程，但是一定要确信它们是有价值的，另外请在添加时包含日期*
 
 * [NetTuts - Building Apps With the Yeoman Workflow](http://net.tutsplus.com/tutorials/javascript-ajax/building-apps-with-the-yeoman-workflow) *2013-07-15*
 * [HTML5Rocks - Building WebApps With Yeoman and Polymer](http://www.html5rocks.com/en/tutorials/webcomponents/yeoman/)
