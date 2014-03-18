@@ -1,20 +1,32 @@
-# MODERN WORKFLOWS FOR MODERN WEBAPPS
+# THE WEB'S SCAFFOLDING TOOL FOR MODERN WEBAPPS
 
 <p class="toolset">
-<img src="https://raw.github.com/yeoman/yeoman.io/gh-pages/media/toolset.png" alt="Yo, Grunt, Bower">
+<img src="https://raw.github.com/yeoman/yeoman.io/gh-pages/assets/img/yeoman-horizontal.gif" alt="Yeoman">
 </p>
+<p class="strapline">
+<a href="http://yeoman.io/gettingstarted.html">Get started</a> and then <a href="http://yeoman.io/community-generators.html">find a generator</a> for your webapp. Generators are available for <a href="https://github.com/yeoman/generator-angular">Angular</a>, <a href="https://github.com/yeoman/generator-backbone">Backbone</a>, <a href="https://github.com/yeoman/generator-ember">Ember</a> and over 400 other projects. Read the <a href="http://updates.html5rocks.com/tag/front-end">Yeoman Monthly Digest</a> for our latest picks.
+</p>
+<p class="strapline oneline">One-line install using <a href="http://npmjs.org">npm</a>:</p>
 
-## Yeoman 1.0
+```
+npm install -g yo
+```
 
-Yeoman 1.0 is more than just a tool. It's a workflow; a collection of tools and best practices working in harmony to make developing for the web even better. 
+## Why use Yeoman?
+
+With so many great tools available to front-end web developers these days it can sometimes be difficult to understand how they all fit together. Deciding on a workflow that you’re happy with is often a very personal endeavour, but getting started isn’t always easy. Yeoman aims to solve this problem by scaffolding workflows for creating modern webapps, while at the same time mixing in many of the best practices that have evolved within the industry. 
+
+## Yeoman
 
 Our workflow is comprised of three tools for improving your **productivity** and **satisfaction** when building a web app: *yo* (the scaffolding tool), *grunt* (the build tool) and *bower* (for package management).
 
-* [Yo](https://github.com/yeoman/yo) scaffolds out a new application, writing your Grunt configuration and pulling in relevant Grunt tasks that you might need for your build. 
+<ul class="tools-list">
+<li class="yoyo"><a href="https://github.com/yeoman/yo">yo</a> scaffolds out a new application, writing your Grunt configuration and pulling in relevant Grunt tasks and Bower dependencies that you might need for your build.</li>
 
-* [Grunt](http://gruntjs.com) is used to build, preview and test your project, thanks to help from tasks curated by the Yeoman team and grunt-contrib. 
+<li class="gruntjs"><a href="http://gruntjs.com">Grunt</a> is used to build, preview and test your project, thanks to help from tasks curated by the Yeoman team and grunt-contrib. </li>
 
-* [Bower](http://bower.io) is used for dependency management, so that you no longer have to manually download and manage your scripts.
+<li class="bower"><a href="http://bower.io">Bower</a> is used for dependency management, so that you no longer have to manually download and manage your scripts.</li>
+</ul>
 
 All three of these tools are developed and maintained separately, but work well together as part of our prescribed workflow for keeping you effective.
 
@@ -32,7 +44,9 @@ npm install -g yo
 
 This will install _Grunt_ and _Bower_ automatically. 
 
-`yo` can generate several types of applications, but it needs help from plug-ins, or "generators" to get the job done. To scaffold a web application, you'll need to grab the web app generator:
+**Pro-tip:** A [5 Minute Introduction Video](http://www.youtube.com/watch?feature=player_embedded&v=zBt2g9ekiug) to Yeoman is available if you're a little more visually inclined :)
+
+`yo` can generate several types of applications, but it needs help from plug-ins, or [generators](http://yeoman.io/community-generators.html) to get the job done. To scaffold a web application, you'll need to grab the web app generator:
 
 ```
 npm install -g generator-webapp
@@ -41,6 +55,8 @@ npm install -g generator-webapp
 **Note:** Many generators no longer require this installation step and will automatically install yo, grunt and bower just by installing the generator directly.
 
 You can install additional generators with npm. For example, to install the [AngularJS](http://angularjs.org) generator: `npm install -g generator-angular`. Run `yo` for more information.
+
+**Pro-tip:** Looking for a tutorial? We're happy to recommend [Building apps with the Yeoman workflow](http://net.tutsplus.com/tutorials/javascript-ajax/building-apps-with-the-yeoman-workflow/) on NetTuts.
 
 ### Usage
 
@@ -59,7 +75,7 @@ npm install -g generator-angular  # install generator
 yo angular                        # scaffold out a AngularJS project
 bower install angular-ui          # install a dependency for your project from Bower
 grunt test                        # test your app
-grunt server                      # preview your app
+grunt serve                       # preview your app (formerly `grunt server`)
 grunt                             # build the application for deployment
 ```
 

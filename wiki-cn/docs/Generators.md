@@ -24,7 +24,7 @@
 
 生成器背后的理念是能够很简单的与他人分享你的想法和最佳实践。不久前，使用[HTML5 Boilerplate](http://html5boilerplate.com) 曾是最佳的方法来启动你的应用。但是现在，甚至连复制和自定义样板文件来适应你的环境看起来都那么费劲。
 
-<img src="https://raw.github.com/yeoman/yeoman.io/gh-pages/media/yobox.png" style="width: 100%; max-width: 400px;">
+<img src="https://raw.github.com/yeoman/yeoman.io/gh-pages/assets/img/yobox.png" style="width: 100%; max-width: 400px;">
 
 _先生，给你一天的美好_
 
@@ -52,7 +52,7 @@ npm install -g yo generator-generator
 
 现在你已经装好了 `yo` 和 `generator-generator` ，让我们创造一个生成器来帮助其他人构建一个简单的blog。
 
-我们将创建一个目录为我们叫做`generator-blog`的生成器服务。遵循这个 `generator-____` 惯例是很重要的，过一会儿你就会明白这是为什么。让我们创建这个目录，继续吧。
+我们将创建一个目录为名为`generator-blog`的生成器服务。***遵循这个 `generator-____` 惯例是很重要的***。过一会儿你就会明白这是为什么。让我们创建这个目录，继续吧。
 
 ```bash
 $ mkdir ~/dev/generator-blog && cd $_
@@ -340,7 +340,7 @@ What do you want to call your blog?
 * Blog的博文必须用Markdown书写
 * NPM将安装一些Grunt任务和其他一些帮助函数，这些帮助函数为我们将提供给用户的两个自定义任务服务：
   * `grunt build` - 创建一个来自每篇博文关键字的"wordmap"
-  * `grunt serve` - 监控Markdown的更改，重新构建这个项目
+  * `grunt server` - 监控Markdown的更改，重新构建这个项目
 * Bower将获取两个运行时依赖：
   * [Showdown](https://github.com/coreyti/showdown) - 把Markdown翻译为HTML
   * [Showup](https://github.com/stephenplusplus/showup) - 一个为这个生成器的目的而编写的库
@@ -495,10 +495,10 @@ Done, without errors.
 
 如果你好奇想看到更多，那就看吧！
 
-刚才那是构建任务,它也会从另一个grunt任务被运行；`serve`。试试看这个：
+刚才那是构建任务,它也会从另一个grunt任务被运行；`server`。试试看这个：
 
 ```bash
-$ grunt serve
+$ grunt server
 Running "build" task
 
 Running "connect:livereload" (connect) task
@@ -599,7 +599,7 @@ PostGenerator.prototype.files = function files() {
 
 _因为我们生成的文件内容非常少，它只有一个基于博文标题的`# 标题`，我选择移除`templates`目录，我把它写在了这个 `PostGenerator.prototype.files` 函数内实现。对于规模更大的应用，结构良好的分割是必不可少的。_
 
-我的天啊，我们有了一个blog生成器！试着创建编写一些博文。试着玩玩 `grunt serve` 和 `grunt build`，保持 `index.html` 在打开状态然后看看结果。一切都按预期那样吗？
+我的天啊，我们有了一个blog生成器！试着创建编写一些博文。试着玩玩 `grunt server` 和 `grunt build`，保持 `index.html` 在打开状态然后看看结果。一切都按预期那样吗？
 
 
 <h2 id="writing-your-next-generator">编写你的下一个生成器</h2>
@@ -838,7 +838,5 @@ this.bowerInstall([
 
 
 <h2 id="reference-materials">参考资料</h2>
-
-* [Generator API](https://github.com/yeoman/generator/wiki/base)
-* [Environment](https://github.com/yeoman/generator/wiki/env)
+* [Generator API](http://yeoman.github.io/generator/)
 * [Testing generators](https://github.com/yeoman/generator/wiki/Testing-generators)

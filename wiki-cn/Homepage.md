@@ -1,22 +1,35 @@
 # 为现代Web应用而生的现代工作流
 
 <p class="toolset">
-<img src="https://raw.github.com/yeoman/yeoman.io/gh-pages/media/toolset.png" alt="Yo, Grunt, Bower">
+<img src="https://raw.github.com/yeoman/yeoman.io/gh-pages/assets/img/yeoman-horizontal.gif" alt="Yeoman">
 </p>
 
-## Yeoman 1.0
+<p class="strapline">
+<a href="http://yeoman.io/gettingstarted.html">新手上路</a>然后为你的web应用<a href="http://yeoman.io/community-generators.html">找到一个生成器</a>。现在已有的生成器包括<a href="https://github.com/yeoman/generator-angular">Angular</a>, <a href="https://github.com/yeoman/generator-backbone">Backbone</a>, <a href="https://github.com/yeoman/generator-ember">Ember</a>以及超过400种其他的项目。查阅<a href="http://updates.html5rocks.com/tag/front-end">Yeoman Monthly Digest(Yeoman每月摘要)</a>获取我们最新的信息。
+</p>
+<p class="strapline oneline">使用一行<a href="http://npmjs.org">npm</a>命令轻松安装:</p>
 
-Yeoman 1.0版本不仅仅是一个工具，它还是一个工作流；一个让web开发和谐甚至变得更好的工具和最佳实践的集合。
+```
+npm install -g yo
+```
+
+## 为什么使用Yeoman?
+
+现在前端web开发者已经有了很多非常棒的工具，有时很难理解它们是怎么互相配合的。制定一个令你满意的工作流经常是非常个性化的行为，但是万事开头难。Yeoman的旨在通过脚手架工作流为创建现代web应用解决这个问题，同时融合已经被业界广泛采用的最佳实践。
+
+## Yeoman
 
 我们的工作流致力于提高你在构建web应用时的**生产力**和**舒适度**，由三种核心工具构成：*yo*（脚手架工具），*bower*（包管理工具），*grunt*（构建工具）。
 
-* [Yo](https://github.com/yeoman/yo) 搭建新应用的脚手架，编写你的Grunt配置并且安装你有可能在构建中需要的相关的Grunt任务。
+<ul class="tools-list">
+<li class="yoyo"><a href="https://github.com/yeoman/yo">yo</a> 搭建新应用的脚手架，编写你的Grunt配置并且安装你有可能在构建中需要的相关Grunt任务和Bower的依赖资源。</li>
 
-* [Grunt](http://gruntjs.com) 被用来构建，预览以及测试你的项目，感谢来自那些由Yeoman团队和grunt-contrib所管理的任务的帮助。
+<li class="gruntjs"><a href="http://gruntjs.com">Grunt</a> 被用来构建，预览以及测试你的项目，感谢来自那些由Yeoman团队和grunt-contrib所管理的任务的帮助。</li>
 
-* [Bower](http://bower.io) 被用来进行依赖管理，所以你不再需要手动的下载和管理你的脚本了。
+<li class="bower"><a href="http://bower.io">Bower</a> 被用来进行依赖管理，所以你不再需要手动的下载和管理你的脚本了。</li>
+</ul>
 
-所有这说那样工具都是独立开发和维护的，但是很好的工作在一起作为我们指定的工作流的一份子来保持你的效率。
+这三个工具都是独立开发和维护的，但是它们作为我们指定的工作流的一份子为了你的高效产出很好的协同工作在一起。
 
 ## 新手上路
 
@@ -32,7 +45,9 @@ npm install -g yo
 
 它将自动安装_Grunt_和_Bower_。
 
-`yo`可以生成若干种类的应用，但是它需要来自插件，或者说是”生成器“的帮助来完成这项工作。要搭建一个web应用的脚手架，你需要先获取web应用的生成器：
+**Tip:** 如果你更倾向于一个视觉动物的话，这里有一个关于Yeoman的[5分钟介绍视频](http://www.youtube.com/watch?feature=player_embedded&v=zBt2g9ekiug) :)
+
+`yo`可以生成若干种类的应用，但是它需要来自插件或者说是["生成器"](http://yeoman.io/community-generators.html)的帮助来完成这项工作。要搭建一个web应用的脚手架，你需要先获取web应用的生成器：
 
 ```
 npm install -g generator-webapp

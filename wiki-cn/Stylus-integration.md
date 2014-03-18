@@ -1,27 +1,29 @@
-# Get the Gist of It
-Download [here](https://gist.github.com/ffcbf037e6e856e1010d)
+# 获取这个主题的Gist 
+下载[点击这里](https://gist.github.com/ffcbf037e6e856e1010d)
 
-# How-To
+# 如何整合
 
-## Part I: Grunt
+## 第一部分: Grunt
 
-### Add `grunt-contrib-stylus` as a `devDependency`
+### 将`grunt-contrib-stylus`作为一项`devDependency`加入package.json
 
-Run `npm install -D grunt-contrib-stylus`. This will add it to your `package.json` after installing. 
+运行 `npm install -D grunt-contrib-stylus`. 这个命令会将`grunt-contrib-stylus`在安装后添加到你的`package.json`文件中。
 
-(If you want to use the node-canvas fallback for gradients, you may also run `npm install -D canvas`. See nib doc.)
+(如果你想要对gradients(渐变)采用node-canvas的方案, 你可以运行`npm install -D canvas`，请查看nib文档了解更多。)
 
 
-### Declare the task in `Gruntfile.js`
+### 在`Gruntfile.js`中进行任务声明
 
 ```
-  grunt.loadNpmTasks('grunt-contrib-stylus');
+  grunt.loadNpmTasks('grunt-contrib-stylus'); // 如果你使用load-grunt-tasks的话，这行可以省略
   grunt.registerTask('compass', ['stylus']);
 ```
 
-## Part II: Stylus
+注意: 如果你之前并没有使用compass，此时你不必对它进行重写覆盖，你只需要把'stylus'(或者'stylus:compile'，这取决与你的具体需要)添加到grunt.registerTask()函数的队列参数中。
 
-### Configure Compilation 
+## 第二部分: Stylus
+
+### 设置编译配置
 
 ```
     stylus: {
@@ -37,11 +39,11 @@ Run `npm install -D grunt-contrib-stylus`. This will add it to your `package.jso
     },
 ```
 
-The `paths` definition let you do `@import 'nib'` in stylesheets.
+这里的 `paths` 定义允许你在样式中使用 `@import 'nib'`.
 
 
 
-### Configure `--watch` Behavior
+### 配置 `--watch`
 ```
       stylus: {
         files: [
@@ -51,4 +53,4 @@ The `paths` definition let you do `@import 'nib'` in stylesheets.
       },
 ```
 
-## Part III (optional): Delete the Compass and Compass watch configurations
+## 第三部分 (可选): 删除Compass和Compass watch配置

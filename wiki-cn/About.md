@@ -14,25 +14,27 @@ Yeoman是一个开源项目，它为web应用开发定义了一个自用的栈�
 
 对于我们在Yeoman 1.0的目标的完整细节，请看[通向1.0版本之路](/road.html).
 
-## 都有谁参与了？
+## 参与者
 
-Chrome开发者关系团队和从社区选择的外部贡献者。
+Yeoman由以下这些人还有很多非常棒的[贡献者](https://github.com/yeoman/yeoman/graphs/contributors)精心打造。
 
-### Google：
+[![Addy Osmani](http://gravatar.com/avatar/96270e4c3e5e9806cf7245475c00b275?s=144)](http://addyosmani.com) | [![Sindre Sorhus](http://gravatar.com/avatar/d36a92237c75c5337c17b60d90686bf9?s=144)](http://sindresorhus.com) | [![Pascal Hartig](http://gravatar.com/avatar/be451fcdbf0e5ff07f23ed16cb5c90a3?s=144)](http://passy.me) | [![Stephen Sawchuk](http://gravatar.com/avatar/098cfe2d360e77c3229f2cd5298354c4?s=144)](https://github.com/stephenplusplus) | [![Simon Boudrias](http://gravatar.com/avatar/368346708a485060d31f77677a21d2a5?s=144)](https://github.com/SBoudrias)
+:---:|:---:|:---:|:---:|:---:
+[Addy Osmani](http://addyosmani.com) | [Sindre Sorhus](http://sindresorhus.com) | [Pascal Hartig](http://passy.me) | [Stephen Sawchuk](https://github.com/stephenplusplus) | [Simon Boudrias](https://github.com/SBoudrias)
 
-Paul Irish驱动这个项目。
-Addy Osmani领导CLI的开发以及文档部分。
-Eric Bidelman进行内部分析（Yeoman分析和日志记录）。
+[![Brian Ford](http://gravatar.com/avatar/721cc7667947af96cc416729fc497107?s=144)](http://briantford.com) | [![Eddie Monge](https://s.gravatar.com/avatar/08a01ffbfa6e039295208f023dec0dae?s=144)](http://eddiemonge.com) | [![Paul Irish](http://gravatar.com/avatar/ffe68d6f71b225f7661d33f2a8908281?s=144)](http://paulirish.com) | [![Hemanth.HM](https://s.gravatar.com/avatar/d32a6bf2b43bf62a7212f0c793d76319?s=144)](http://h3manth.com) | [![Revath S Kumar](https://s.gravatar.com/avatar/fb7edc7cc7a53c903af74d07dcecf9dc?s=144)](http://blog.revathskumar.com)
+:---:|:---:|:---:|:---:|:---:
+[Brian Ford](http://briantford.com) | [Eddie Monge](http://eddiemonge.com) | [Paul Irish](http://paulirish.com) | [Hemanth.HM](http://h3manth.com) | [Revath S Kumar](http://blog.revathskumar.com)
 
-### 外部贡献者：
+[![Jimmy Moon](https://1.gravatar.com/avatar/687ac25540fe35fcb5e828f75c4a6079?s=144)](http://ragingwind.org) | [![Frederick Ros](http://gravatar.com/avatar/4605de69c4c3af3f48b8e829206cd4c2?s=144)](https://github.com/sleeper) | [![Mickael Daniel](http://gravatar.com/avatar/a23615915f0baf096b94cc9df93fc327?s=144)](https://github.com/mklabs) | [![Eric Bidelman](http://gravatar.com/avatar/e7948aac7c52b26470be80311873a398?s=144)](http://ericbidelman.com)
+:---:|:---:|:---:|:---:|:---:
+[Jimmy Moon](http://ragingwind.org) | [Frederick Ros](https://github.com/sleeper) | [Mickael Daniel](https://github.com/mklabs) | [Eric Bidelman](http://ericbidelman.com)
 
-Sindre Sorhus  
-Mickael Daniel
 
-他们对于推动CLI的开发和项目其他部分的进展给出了极大的帮助。
+## 使用许可说明
 
-## 关于代码仓库的一个注意事项
-
-Yeoman组织有一些代码仓库。yeoman/yeoman.io包含了由B-Reel设计的网站内容还有当前持有的页面（那些可以从[http://yeoman.io](http://yeoman.io)看到的内容），它是为主项目的代码库服务的。请随时咨询Paul或者Anny你是否应该要求其他代码仓库的权限，我们将把它们挑选出来。
+[BSD license](http://opensource.org/licenses/bsd-license.php)
+Copyright (c) Google
 
 欧了，如果你有任何问题，建议或者担心，请联系我们，我们将尽力提供帮助。
+

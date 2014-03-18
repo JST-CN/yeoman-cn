@@ -1,3 +1,57 @@
+对那些希望发布或者部署一些特定目录（比如`dist`）到Github pages或者其他一些生产服务器的开发者来捉，以下的部署指南是很有用的。
+
+对于一个使用`yo`搭建的典型项目来说，`grunt build`将会在`dist`目录中生成一份经过优化的应用版本。有很多种方式来进行版本优化并且把代码部署到生产环境。
+
+### Grunt-build-control 任务
+
+
+[Grunt build control](https://github.com/robwierzbowski/grunt-build-control)是专门为部署Yeoman应用而开发的。它可以帮助你进行版本转换并且利用grunt任务自动部署构建的代码。配置选项包括：
+
+- 需要把代码提交到的分支名称 (比如, prod, gh-pages)
+- 需要推送的远端(比如, Heroku实例, GitHub远端, 或者本地代码仓库)
+- 自动提交构建的代码以及包含分支内容的信息
+- 安全性检查确保源码仓库的干净以及构建代码与源代码码提交保持一致。
+
+Build Control抓取之前的每一个提交，并且通常在有多个代码贡献者独立部署的情况下可以很好的保持代码的版本控制。只要没有用户强制push它就能维护完整的修订历史。项目的完整文档可以在查看[GitHub page](https://github.com/robwierzbowski/grunt-build-control)。
+
+### Git subtree 命令
+
+你可以在同一个分支上维护源代码以及构建代码，并且通过[`git subtree`](https://github.com/apenwarr/git-subtree) 命令只部署`dist`目录。
+
+1. 从`.gitignore`文件中移除`dist`目录，默认情况下Yeoman项目是忽略它的。
+2. 添加`dist`目录到你的代码仓库:  
+
+        git add dist && git commit -m "Initial dist subtree commit"
+
+3. 部署subtree到一个不同的分支。用`--prefix`指定一个相对于`dist`目录的相对路径:
+
+        git subtree push --prefix dist origin gh-pages
+
+4. 正常开发，提交你整个代码库到你的默认（master）分支。
+5. 部署`dist`目录, 从根目录运行`subtree push`命令:
+
+        git subtree push --prefix dist origin gh-pages
+
+### Git-directory-deploy 脚本
+
+[Git directory deploy](https://github.com/X1011/git-directory-deploy) 是一个精简的自动化脚本，它与grunt build control有着相似的工作理念。
+
+### 衍生内容
+
+- [Git Subtree docs](https://github.com/git/git/blob/master/contrib/subtree/git-subtree.txt)
+- [Yeoman Build process docs](https://github.com/yeoman/yeoman/wiki/yeoman-build)
+- [Github Pages docs](https://help.github.com/articles/user-organization-and-project-pages)
+- [Generating a Heroku procfile with generator-heroku](https://github.com/passy/generator-heroku)
+
+
+
+
+
+
+
+
+
+
 # 部署
 
 ## 部署你的应用

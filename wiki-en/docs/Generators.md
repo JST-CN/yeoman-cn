@@ -24,7 +24,7 @@ By now, you've probably read the lovely [Getting Started](http://yeoman.io/getti
 
 The idea behind a generator can be simplified to sharing your ideas and best practices with others. It wasn't long ago using [HTML5 Boilerplate](http://html5boilerplate.com) was the best way to get your application off the ground. But now, even the act of cloning and customizing the boilerplate to work within your environment seems strenuous.
 
-<img src="https://raw.github.com/yeoman/yeoman.io/gh-pages/media/yobox.png" style="width: 100%; max-width: 400px;">
+<img src="https://raw.github.com/yeoman/yeoman.io/gh-pages/assets/img/yobox.png" style="width: 100%; max-width: 400px;">
 
 _And a day of good to you, sir._
 
@@ -52,7 +52,7 @@ You're set up!
 
 Now that you have `yo` and `generator-generator` installed, let's say we wanted to make a generator to help someone build a simple blog.
 
-We'll create a directory to work on our generator called `generator-blog`. It's important to follow this `generator-____` convention. You'll see why in a moment. Let's create the directory, and get going!
+We'll create a directory to work on our generator called `generator-blog`. **It's important to name the directory correctly following the generator-____ convention**. You'll see why in a moment. Let's create the directory, and get going!
 
 ```bash
 $ mkdir ~/dev/generator-blog && cd $_
@@ -340,7 +340,7 @@ Things are looking great for our blog generator. We have enough in place to star
 * Blog posts will be written in Markdown
 * NPM will install some Grunt tasks, and a few other helpers for two custom tasks we'll give the user:
   * `grunt build` - creates a "wordmap" of keywords from each blog post
-  * `grunt serve` - watches for changes to the Markdown, re-builds the project
+  * `grunt server` - watches for changes to the Markdown, re-builds the project
 * Bower will fetch two run-time dependencies:
   * [Showdown](https://github.com/coreyti/showdown) - translates Markdown into HTML
   * [Showup](https://github.com/stephenplusplus/showup) - a library written for the purposes of this generator
@@ -495,10 +495,10 @@ The build task also performs the following sub-tasks:
 
 If you're curious to see more, just go look!
 
-That's the build task, which is also run from another grunt task; `serve`. Try that one out:
+That's the build task, which is also run from another grunt task; `server`. Try that one out:
 
 ```bash
-$ grunt serve
+$ grunt server
 Running "build" task
 
 Running "connect:livereload" (connect) task
@@ -599,7 +599,7 @@ We made use of a new method here, `this.write`. As I'm sure you've guessed by no
 
 _I chose to remove the `templates` directory, as the file we're generating is quite small in content. Since it's just a `# Heading` based on the title of the post, I inlined it into this `PostGenerator.prototype.files` function. For a larger-scale application, well structured separation is indispensable._
 
-Holy moly, we have a blog generator! Try creating and editing posts. Play with `grunt serve` and `grunt build`, keeping `index.html` open to see the results. Did everything work?
+Holy moly, we have a blog generator! Try creating and editing posts. Play with `grunt server` and `grunt build`, keeping `index.html` open to see the results. Did everything work?
 
 
 <h2 id="writing-your-next-generator">Writing Your Next Generator</h2>
@@ -856,6 +856,5 @@ this.bowerInstall([
 
 <h2 id="reference-materials">Reference Materials</h2>
 
-* [Generator API](https://github.com/yeoman/generator/wiki/base)
-* [Environment](https://github.com/yeoman/generator/wiki/env)
+* [Generator API](http://yeoman.github.io/generator/)
 * [Testing generators](https://github.com/yeoman/generator/wiki/Testing-generators)

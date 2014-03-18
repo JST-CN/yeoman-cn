@@ -1,4 +1,4 @@
-This wiki is open for anyone to edit. Feel free to fix grammar and other things. For big changes, first open an issue for discussion.
+This wiki is being merged with the official site, [Yeoman.io](http://yeoman.io). Once that is complete, this wiki will be deleted. For any changes, open an issue or pull request for discussion on the [repo for that site](http://github.com/yeoman/yeoman.io).
 
 
 ## 1.0 docs
@@ -14,7 +14,7 @@ This wiki is open for anyone to edit. Feel free to fix grammar and other things.
 - [[Articles]]
 - [[Related Projects]]
 - [[Deployment]]
-- [[Package Manager]]
+- [[Front end package management with Bower]]
 
 
 ---

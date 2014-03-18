@@ -1,5 +1,5 @@
 # yeoman Wiki之家
-这个wiki向所有人开放，任何人都可以编辑。请放心修复语法和其他错误，对于那些大的更改，请先创建一个issue来讨论。
+这个wiki正在与官方网站进行合并,[Yeomain.io](http://yeoman.io)
 
 
 ## 1.0 文档
@@ -15,7 +15,7 @@
 - [[文章|Articles]]
 - [[相关项目|Related Projects]]
 - [[部署|Deployment]]
-- [[包管理器|Package Manager]]
+- [[Bower前端包管理器|Front end package management with Bower]]
 
 
 ---

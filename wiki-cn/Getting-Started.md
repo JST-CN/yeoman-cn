@@ -10,7 +10,7 @@ Yeoman工作流致力于提高你在构建web应用时的生成力和舒适度�
 
 
 <p class="toolset">
-  <img class="full" src="https://raw.github.com/yeoman/yeoman.io/gh-pages/media/workflow.jpg">
+  <img class="full" src="https://raw.github.com/yeoman/yeoman.io/gh-pages/assets/img/workflow.jpg">
 </p>
 
 ## yo 
@@ -142,6 +142,7 @@ bower search jquery-pjax
 bower install jquery-pjax --save
 
 # If you're using RequireJS...
+# (be aware that currently the webapp generator does not include RequireJS and the following command only applies to generators that do)
 grunt bower
 > Injects your Bower dependencies into your RequireJS configuration.
 

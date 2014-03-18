@@ -12,3 +12,4 @@
 * docs/Generators.md - [Done]
 * docs/Package-Manager.md - [Done]
 * FAQ.md - [Done]
+* Front-end-package-management-with-Bower.md - [Done]
